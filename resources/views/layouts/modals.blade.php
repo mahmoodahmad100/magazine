@@ -1,5 +1,5 @@
 <!-- report-post-modal -->
-{!! Form::open(['route' => 'postReport' , 'method' => 'post']) !!}
+{!! Form::open(['route' => 'postReport' , 'method' => 'post', 'data-parsley-validate']) !!}
 <div class="modal fade col-md-12" tabindex="-1" role="dialog" id="report-post-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -9,8 +9,8 @@
       </div>
       <div class="modal-body">
 
-          {!! Form::label('report-post-body','The reason (Max:20 characters):') !!}
-          {!! Form::textarea('report-post-body',null,['class' => 'form-control', 'rows' =>'2' , 'id' => 'report-post-body']) !!} <br/>
+          {!! Form::label('report-post-body','The reason (Min:3 characters - Max:20 characters):') !!}
+          {!! Form::text('report-post-body',null,['class' => 'form-control', 'id' => 'report-post-body', 'required', 'minlength' => '3', 'maxlength' => '20']) !!} <br/>
 
       </div>
       <div class="modal-footer">
@@ -94,7 +94,7 @@
 <!--post-delete-modal end -->
 
 <!-- report-comment-modal -->
-{!! Form::open() !!}
+{!! Form::open(['data-parsley-validate']) !!}
 <div class="modal fade col-md-12" tabindex="-1" role="dialog" id="report-comment-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -104,8 +104,8 @@
       </div>
       <div class="modal-body">
 
-          {!! Form::label('report-comment-body','The reason (Max:20 characters):') !!}
-          {!! Form::textarea('report-comment-body',null,['class' => 'form-control', 'rows' =>'2' , 'id' => 'report-comment-body']) !!} <br/>
+          {!! Form::label('report-comment-body','The reason (Min:3 characters - Max:20 characters):') !!}
+          {!! Form::text('report-comment-body',null,['class' => 'form-control', 'id' => 'report-comment-body', 'required', 'minlength' => '3', 'maxlength' => '20']) !!} <br/>
 
       </div>
       <div class="modal-footer">
