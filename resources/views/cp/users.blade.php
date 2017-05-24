@@ -27,7 +27,7 @@
                   <a data-isadmin="{{ $user->admin }}" href="#" class="btn btn-primary admin-btn">{{ $user->admin == 0 ? 'Admin' : 'Admin (yes)' }}</a>
                   <a data-isban="{{ $user->ban }}" href="#" class="btn btn-danger ban-btn">{{ $user->ban == 0 ? 'Ban' : 'Banned (yes)' }}</a>
                 @elseif ($user->id == 1)
-                  {{ Auth::user()->id == 1 ? 'you' :$user->username}}{{ ' is the CEO of that website' }}
+                  {{ Auth::user()->id == 1 ? 'you are' :$user->username.' is'}}{{ ' the CEO of that website' }}
                 @else
                 {{ 'you can not make action for yourself' }}
                 @endif
