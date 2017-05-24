@@ -1,0 +1,43 @@
+.navbar-inverse .navbar-brand{
+  padding:0px;
+  margin: 0px;
+}
+.website-logo{
+  height:50px;
+  width:50px;
+  margin: 0px 10px;
+}
+a .cover{
+  width:350px;
+  height:220px;
+}
+
+.avatar{
+  display:block;
+  margin-top:3px;
+  height:96px;
+  width:96px;
+}
+.avatar-post{
+  display:block;
+  margin:0 auto;
+  height:96px;
+  width:96px;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 992px)
+{
+  .navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-brand:focus{
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border: none;
+  }
+
+}
