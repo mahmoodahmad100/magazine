@@ -71,7 +71,7 @@
               </a>
               @endif
 
-              <b href="" class="p-likes" style="margin:0 10%">{{ $post->likes->where('isPost','1')->count() }} {{ $post->likes->where('isPost','1')->count() == 1 ? "like" : "likes" }}</b>
+              <b href="" class="p-likes" style="margin:0 10%">{{ $post->likes->where('isPost',1)->count() }} {{ $post->likes->where('isPost',1)->count() == 1 ? "like" : "likes" }}</b>
               @if(Auth::user()->id == $post->user_id)
               <a href="#" data-postid="{{ $post->id }}" class="pull-right delete-post"><span class=" glyphicon glyphicon-remove"></span></a>
               <a href="#" data-postid="{{ $post->id }}" class="pull-right edit-post" style="margin-right:2%"><span class=" glyphicon glyphicon-pencil"></span></a>
@@ -156,7 +156,7 @@
                 </a>
                 @endif
 
-                <b class="c-likes" style="margin:0 10%">{{ $comment->likes->where('isPost','0')->count() }} {{ $comment->likes->where('isPost','0')->count() == 1 ? "like" : "likes" }}</b>
+                <b class="c-likes" style="margin:0 10%">{{ $comment->likes->where('isPost',0)->count() }} {{ $comment->likes->where('isPost',0)->count() == 1 ? "like" : "likes" }}</b>
 
                 @if(Auth::user()->id == $comment->user_id)
                 <a href="#" data-commentid="{{ $comment->id }}" class="pull-right delete-comment"><span class=" glyphicon glyphicon-remove"></span></a>
