@@ -1,5 +1,5 @@
 # magazine
-magazine website built with laravel
+magazine website built on laravel framework
 
 ### Demo  
 * http://rocky-coast-75670.herokuapp.com/
