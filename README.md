@@ -3,13 +3,9 @@ magazine website built on laravel framework
 
 ### Demo
 * https://laravelwebsite100.000webhostapp.com/magazine/public
-* http://rocky-coast-75670.herokuapp.com/ (the same work but on heroku ... you may find some problems)
 * admin credentials: `email: test@test.com` And `password: 123`
 * secondary admin credentials (can do like admin role but with limited role): `email: test1@test.com` And `password: 50505050` 
 * normal user credentials: `email: test2@test.com` And `password: 80808080`
-#### Note that there are some issues because heroku PaaS:
-* storage issue for example when you open the previous link you may see no image for each post
-* when you open any post and you already liked a post or a comment you'll see `0 likes` but when you remove the like or add a new like it works
 
 ### Features(main features)
 * Admin panel 
